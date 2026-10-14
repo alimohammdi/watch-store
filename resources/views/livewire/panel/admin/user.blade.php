@@ -41,7 +41,7 @@
 								<td class="text-center align-middle">{{  $user->email }}</td>
                                 <td class="text-center align-middle">{{  $user->mobile  ?? '-'}}</td>
 								<td class="text-center align-middle">
-									<a class="btn btn-outline-info" href="#">
+									<a class="btn btn-outline-info" href="{{  route('user.role',['user'=> $user->id]) }}">
 										نقش های کاربر
 									</a>
 								</td>
